@@ -1,0 +1,378 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span {
+    font-family: 'Spartan', sans-serif;
+}
+
+.menu-bar {
+    background-color: #e7e6e6;
+}
+
+.menu-item li {}
+
+.menu-item li a {
+    text-decoration: none;
+    color: #5d5956;
+    font-weight: 500;
+    padding: 0 10px;
+    font-size: 13px;
+    position: relative;
+}
+
+.menu-item li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    height: 2px;
+    width: 0;
+    background-color: #9889ec;
+    transition: .5s;
+
+}
+
+.menu-item li a:hover::after {
+    width: 100%;
+}
+
+
+.menu-item li a :hover {}
+
+.m-button {
+    background-color: #fff;
+    color: #4f7df0;
+    font-size: 13px;
+    border-color: #fff;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    padding: 15px 30px;
+}
+
+.m-button:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+.m-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #907eff !important;
+    border-color: #907eff !important;
+    border-radius: 50rem;
+    z-index: -1;
+    transition: .4s;
+
+
+}
+
+.m-button:hover::after {
+    width: 100%;
+    color: #fff !important;
+}
+
+/* dropdown */
+.menu-item li{
+    position: relative;
+}
+.menu-item li ul{
+    position: absolute;
+    top: 236%;
+    left: 0;
+    background-color: #0806ff;
+    width: 150px;
+    padding-left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+    
+}
+.menu-item li ul li{
+    display: block;
+    /* margin: 0;
+    padding: 0; */
+    text-align: center;
+}
+.menu-item li ul li a{
+    display: block;
+    padding: 15px 15px;
+    color: #fff;
+   
+}
+.menu-item li:hover ul{
+opacity: 1;
+visibility: visible;
+    
+}
+
+/* slider start */
+.slider {
+    background-image: url(image/hero-image.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-radius: 600px 0 100px 600px; */
+}
+
+.main-slider {
+    height: 90vh;
+    align-items: center;
+}
+.s-btn{
+    font-size: 14px;
+    padding: 15px 30px;
+}
+.s-btn:hover{
+    background-color: #fff;
+    transition: .5s;
+    color: #3c69db;
+}
+/* slider end */
+
+/* service start */
+.service-heading {
+    padding: 0;
+}
+
+.service-heading h5 {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #a391ec;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.service-heading h1 {
+    position: relative;
+    font-weight: 600;
+}
+
+.service-heading h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    width: 6%;
+    background-color: #907eff;
+    margin-left: 7px;
+
+}
+
+.service-heading p {
+    width: 80%;
+    padding-top: 40px;
+}
+
+.service-heading p span {}
+
+
+.s-area {
+    background-color: #f9fcff;
+    box-shadow: 3px 3px 20px 0 rgba(0, 0, 0, 0.226);
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* transform: scale(1); */
+}
+
+.s-area h5 {
+    padding-bottom: 10px;
+}
+
+.s-area span {
+    display: inline-block;
+    height: 51px;
+    width: 50px;
+    background-color: #5252f0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 25px 25px 25px 0;
+    position: relative;
+}
+
+.s-area span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -13px;
+    height: 3px;
+    width: 66%;
+    background-color: #907eff;
+    /* margin-left: 7px; */
+
+}
+
+.s-area:hover span{
+    background-color: #fff !important;
+    color: #4f7df0;
+}
+
+.s-area:hover span::after {
+    background-color: #fff;
+    
+}
+
+.s-area p {
+    /* color: #96879a; */
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.s-area:hover {
+    background-color: #5252f0;
+    color: #fff !important;
+    transition: .5s;
+    /* transform: scale(1.2); */
+}
+
+
+/* service end */
+
+/* experience start */
+
+.experience {
+    background-image: url(image/video-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.experience {
+    position: relative;
+    z-index: 1;
+}
+
+.experience::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2f3850b4;
+    z-index: -1;
+}
+
+.experienc-content {}
+
+.experienc-content h5 {
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+.experienc-content h2 {
+    position: relative;
+}
+
+.experienc-content h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    height: 2px;
+    width: 18%;
+    background-color: #fff;
+    text-align: center;
+    margin-left: 37%;
+}
+
+.experienc-content p {
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+.box {
+    padding-top: 100px;
+}
+
+.ani {
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.ani span {
+    font-size: 30px;
+    position: relative;
+    color: #4f7df0;
+}
+
+.ani span::before {
+    content: "";
+    position: absolute;
+    left: -45px;
+    top: -37px;
+    height: 120px;
+    width: 120px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: one 2s infinite;
+    transition: .4s;
+
+}
+
+.ani span::after {
+    content: "";
+    position: absolute;
+    left: -55px;
+    top: -46px;
+    height: 140px;
+    width: 140px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: two 2s infinite;
+
+}
+
+@keyframes one {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.2);
+
+    }
+}
+
+@keyframes two {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1.4);
+
+    }
+}
+
+/* experience end */
+.banner{
+    background-image: url(/image//hero-image.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 200px;
+}
